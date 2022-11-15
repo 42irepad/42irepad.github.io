@@ -1,0 +1,134 @@
+*{
+	box-sizing: border-box;
+}
+.header{
+	display: inline-block;
+	width: 100%;
+	color: #333333;
+}
+
+.first-text{
+	margin-top: 120px;
+	text-align: center;
+	font-size: 24px;
+	display: block;
+	font-family: tahoma, sans-serif;
+	font-weight: 300;
+	margin-bottom: 25px;
+
+}
+
+.second-text{
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: tahoma, sans-serif;
+	margin-bottom: 85px;
+}
+
+.content{
+	display: inline-block;
+	width: 100%;
+}
+
+.video{
+	width: 550px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 135px;
+}
+
+.form-mail{
+	width: 350px;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 35px;
+	border: 5px solid #2727d9;
+	text-align: center;
+	font-family: tahoma, sans-serif;
+	font-weight: 900;
+	color: #333333;
+}
+
+.form-mail input{
+	border: 1px solid #333333;
+	padding-left: 15px;
+}
+
+.header-form{
+	margin-top: 30px;
+	margin-bottom: 45px;
+	color: #333333;
+}
+
+.form-mail input{
+	width: 300px;
+	height: 50px;
+	font-family: tahoma, sans-serif;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+.button{
+	width: 300px;
+	height: 50px;
+	background: #2727d9;
+	border-style: none;
+	color: #fff;
+}
+
+.footer-header{
+	width: 100%;
+	text-align: center;
+	font-family: tahoma, sans-serif;
+	font-size: 24px;
+	color: #333;
+	font-weight: 900;
+	margin-top: 150px;
+}
+
+.first-img{
+	display: inline-block;
+	width: 135px;
+	height: 135px;
+	text-align: center;
+	margin-left: 190px;
+	margin-top: 80px;
+	margin-right: 100px;
+}
+
+.secondary-img{
+	display: inline-block;
+	width: 135px;
+	height: 135px;
+	text-align: center;
+	margin-top: 80px;
+	margin-right: 100px;
+}
+
+.thidr-img{
+	display: inline-block;
+	width: 135px;
+	height: 135px;
+	text-align: center;
+	margin-top: 80px;
+	margin-right: 100px;
+}
+
+.fourth-img{
+	display: inline-block;
+	width: 135px;
+	height: 135px;
+	text-align: center;
+	margin-top: 80px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+
+.footer{
+	text-align: center;
+	margin-bottom: 120px;
+}
