@@ -1,0 +1,58 @@
+h1 span{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+h1 strong, .foot-header, .fotter{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    
+}
+
+h1{
+    padding-top: 120px;
+    padding-bottom: 85px;
+    color: #333333;
+}
+
+.forms-box{
+    border: 5px solid #2727d9;
+    height: 315px;
+    margin-bottom: 20px;
+}
+
+.forms-box h2{
+    padding-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
+
+.name, .email, .button{
+    padding: 10px;
+}
+
+.foot-header{
+    margin-top: 145px;
+}
+
+.advantages{
+    padding-top: 90px;
+}
+
+.advantages p, .img-client img, .client-photo img{
+    margin-top: 25px;
+}
+
+.button-sectio2{
+    margin: 100px auto;
+}
+.img-client {
+    margin-bottom: 100px;
+}
+
+.fotter{
+    margin-bottom: 75px;
+}

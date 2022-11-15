@@ -1,0 +1,6 @@
+section {
+  background: red;
+}
+section.hover {
+  color: aqua;
+}
