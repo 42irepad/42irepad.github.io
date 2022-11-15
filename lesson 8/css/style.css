@@ -1,0 +1,17 @@
+.header{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 130px;
+    margin-top: 135px;
+    color: #333333;
+}
+img{
+    height: 150px;
+    margin-bottom: 35px;
+}
+
+
+p{
+    color: #979797;
+}
