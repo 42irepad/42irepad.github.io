@@ -1,0 +1,43 @@
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+ul{
+	text-align: center;
+	display: inline-block;
+	margin-left: 45%;
+}
+
+p{
+	border-style: dashed;
+}
+
+.bold-text{
+	font-weight: bold;
+}
+
+.line-text{
+	text-decoration: underline;
+}
+
+.kyrs{
+	font-style: italic;
+	color: red;
+}
+
+.no-text-line{
+	text-decoration: line-through;
+}
+
+body{
+	background-color: #f4dadb
+}
+
