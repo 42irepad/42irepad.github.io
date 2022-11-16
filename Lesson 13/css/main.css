@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.wall{
+    position: relative;
+    width: 570px;
+    height: 570px;
+    display: inline-block;
+    
+}
+
+.main-bg{
+    width: 570px;
+    height: 570px;
+    display: inline-block;
+    position: absolute;
+}
+
+.wall-form{
+    position: absolute;
+    width: 320px;
+    height: 368px;
+    opacity: 0.7;
+    background-color: #fff;
+    margin: 101px 125px;
+    position: relative;
+    border: none;
+}
+
+.header{
+    width: 149px;
+    height: 24px;
+    background: #01b3b3;
+    border: none;
+    font-size: 11.7px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: -4px 140px 33px 30px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 6px;
+    padding-left: 10px;
+}
+
+.header-email{
+    padding-top: 53px;
+    font-size: 13.5px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    margin-top: -3px;
+    margin-left: 30px;
+    width: 260px;
+    height: 30px;
+    font-style: italic;
+    padding-left: 10px;
+    font-size: 12px;
+    background: url("../img/bg.png")
+    
+}
+
+.pas{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-weight: 100;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+}
+
+.chpas{
+    margin-top: 18px;
+    margin-bottom: 17px;
+    font-weight: 100;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+}
+
+.btn{
+    display: block;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 29px;
+    width: 260px;
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #01b3b3;
+    border: none;
+    border-radius: 3px;
+}
