@@ -26,3 +26,6 @@
 
 
 [Урок 13](https://42irepad.github.io/Lesson%2013/ "Урок 13") - Верстка PixelPerfect
+
+
+[Урок 14](https://42irepad.github.io/Lesson%2014/ "Урок 14") - Верстка сайта
