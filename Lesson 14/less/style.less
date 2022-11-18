@@ -1,0 +1,192 @@
+// fonts
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.regBold(){
+    font-family: 'ProximaNovaBold', sans-serif;
+}
+.reg(){
+    font-family: 'ProximaNovaRg',sans-serif;
+}
+
+// colors
+
+@btn-color: #fbb202;
+@icon-color: #70c849;
+@color-text: #1a1820;
+@danger: #ff0000;
+@light: #fff;
+@bg-light: #f5f5f5;
+@borderInput: #a0a0a0;
+
+// base seting
+body{
+    .reg()
+}
+
+html{
+    font-style: 10px;
+}
+
+section{
+    padding: 10rem 0;
+}
+
+// button
+.button{
+    background-color: @btn-color;
+    color: @light;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: none;
+    .reg();
+    font-size: 1rem;
+}
+
+// main
+.main{
+    padding: 3rem 0;
+    background: url('../img/mainbg.png') center center no-repeat;
+    background-size: cover;
+    // блок контента 
+    &-content{
+        margin-top: 14rem;
+        // загооловок
+        h1{
+            text-transform: uppercase;
+            font-size: 2rem;
+            .regBold();
+            margin-bottom: 2rem;
+            line-height: 1.45;
+        }
+
+    
+        // подзаголовок
+    }
+    &-subtitle{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    // футер после значка 300 рублей
+    &-triger{
+        display: block;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        .regBold()
+    }
+    // Главная форма
+    &-form{
+        background-color: @light;
+        padding: 2rem 3rem;
+        text-align: center;
+        // заголовок главной формы
+        &-header{
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            strong{
+                font-size: 1.3rem;
+            }
+        }
+        small{
+            display: block;
+            margin-top: 1.5rem;
+        }
+        // ввод данных в форме
+        &-input{
+            display: block;
+            border: 1px solid @borderInput;
+            width: 100%;
+            height: 3rem;
+            margin: 2rem 0;
+        }
+        // кнопка формы
+        &-btn{
+            display: block;
+            font-size: 1.5em;
+            height: 4rem;
+            width: 100%;
+}
+    }
+}
+
+// Названия на строками ввода
+label{
+    background-color: @light;
+    padding: 0.5rem;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.3rem;
+}
+
+// зеленый значок 300 рублей
+span{
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    background-color: @icon-color;
+    font-size: 1rem;
+    color:@light;
+    text-align: center;
+    margin-bottom: 3rem;
+    // цифра 300 рублей
+    strong{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+// phonecall
+.phone-link{
+    display: inline-block;
+    color: @color-text;
+    font-weight: 900;
+    font-size: 1.2rem;
+    height: 7rem;
+    line-height: 7rem;
+    .regBold;
+    font-size: 1.3rem;
+}
+
+// шапка сайта
+.header{
+    height: 7rem;
+}
+// кнопка получить консультанцию
+.wrap{
+    display: table;
+    width: 100%;
+    height: 7rem;
+    &-block{
+      display: table-cell;
+      vertical-align: middle;  
+      text-align: right;
+    }
+}
+
+.phone-block{
+    text-align: right;
+}
+
