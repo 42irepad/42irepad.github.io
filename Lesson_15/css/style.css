@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+	display: block;
+}
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+/* затемнение картинок при наведение мышью */
+
+.image-one {
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	transition: 3s;
+}
+
+.image-one:hover:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+
+
+
+.image-two {
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	transition: 3s;
+}
+
+.image-two:hover::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5)
+}
+.image-three {
+	background: url(../img/3.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	transition: 3s;
+}
+
+.image-three:hover::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5)
+}
+.image-four {
+	background: url(../img/4.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	transition: 3s;
+}
+
+.image-four:hover::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+.button-one {
+	border: none;
+	font-weight: 700;
+	font-size: 14px;
+ color: white;
+ padding: .8em 1em calc(.8em + 3px);
+ border-radius: 3px;
+ background: rgb(64,199,129);
+ box-shadow: 0 -3px rgb(53,167,110) inset;
+ transition: 0.2s;
+}
+ /* эффект при наведении на кнопку */
+.button-one:active{
+	background-color: blue;
+	box-shadow:0 -3px #c88650 inset;
+	color:red;
+}
+.button-one:hover{
+	font-size: 16px;
+	border: solid 3px rgb(245, 209, 228); ;
+	box-shadow:none;
+	transition: 0.4s;
+	box-shadow: 2px 2px .4em rgb(167, 53, 116)  , -2px -2px .4em rgb(167, 53, 116);
+	border-radius: 10px;
+}
+
+
+.button-two {
+ display: inline-block;
+ color: white;
+ padding: .5em 2em;
+ border: none;
+ border-width: 2px 0;
+ border-style: solid none;
+ border-color: #FDBE33 #000 #D77206;
+ border-radius: 6px;
+ background: linear-gradient(#F3AE0F, #E38916) #E38916;
+ transition: 0.2s;
+}
+
+.button-two:hover{
+	padding: 0.6em, 2.1em;
+	border-color:#D77206  #000 #FDBE33;
+	background: linear-gradient(#E38916,#F3AE0F) #E38916;
+	color:#eed6be;
+}
