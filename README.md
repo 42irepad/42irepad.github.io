@@ -4,7 +4,7 @@
 Домашние задания
 
 
-[Урок 4](http://42irepad.github.io/Book/ "Урок 4") - Книга сос стилями CSS
+[Урок 4](http://42irepad.github.io/Book/ "Урок 4") - Книга со стилями CSS
 
 
 [Урок 6](http://42irepad.github.io/Sait-in-Navi/ "Урок 6") - Ссайт с навигацией
@@ -32,3 +32,6 @@
 
 
 [Урок 15](https://42irepad.github.io/Lesson%2015/ "Урок 15") - Псевдоэлементы и псевдоклассы.
+
+
+[Урок 16](https://42irepad.github.io/Lesson_16_slide/ "Урок 16") - Слайды
