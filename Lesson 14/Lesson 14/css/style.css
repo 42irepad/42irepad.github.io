@@ -20,9 +20,6 @@ body {
 html {
   font-style: 10px;
 }
-section {
-  padding: 10rem 0;
-}
 .button {
   background-color: #fbb202;
   color: #ffffff;
@@ -54,6 +51,19 @@ section {
   font-family: 'ProximaNovaBold', sans-serif;
   margin-bottom: 2rem;
   line-height: 1.45;
+}
+.main-title span {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  background-color: #70c849;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main-title span strong {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 .main-subtitle {
   font-size: 1.2rem;
@@ -116,19 +126,6 @@ label {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   font-size: 1rem;
-}
-span {
-  display: inline-block;
-  padding: 1.2rem 2rem;
-  background-color: #70c849;
-  font-size: 1rem;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-span strong {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
 }
 .phone-link {
   display: inline-block;
@@ -195,4 +192,173 @@ span strong {
     background: url('../img/mainbg.png') no-repeat;
     background-size: cover;
   }
+}
+.advantages {
+  padding: 5rem 0 0 0;
+}
+.advantages-header {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.advantages-icons {
+  margin: 133px 0 145px;
+  text-align: center;
+}
+.advantages-icons-first,
+.advantages-icons-second,
+.advantages-icons-third,
+.advantages-icons-fourth {
+  display: inline-block;
+  text-align: center;
+}
+.advantages-icons-first img,
+.advantages-icons-second img,
+.advantages-icons-third img,
+.advantages-icons-fourth img {
+  display: block;
+  margin: 0 auto;
+}
+.advantages-icons-first strong,
+.advantages-icons-second strong,
+.advantages-icons-third strong,
+.advantages-icons-fourth strong {
+  display: block;
+  padding: 70px 0 45px;
+  font-size: 20px;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.advantages-icons-first .coin,
+.advantages-icons-second .coin,
+.advantages-icons-third .coin,
+.advantages-icons-fourth .coin,
+.advantages-icons-first .folder,
+.advantages-icons-second .folder,
+.advantages-icons-third .folder,
+.advantages-icons-fourth .folder,
+.advantages-icons-first .clock,
+.advantages-icons-second .clock,
+.advantages-icons-third .clock,
+.advantages-icons-fourth .clock,
+.advantages-icons-first .piggy,
+.advantages-icons-second .piggy,
+.advantages-icons-third .piggy,
+.advantages-icons-fourth .piggy {
+  width: 80px;
+  height: 70px;
+}
+.advantages-icons-first p,
+.advantages-icons-second p,
+.advantages-icons-third p,
+.advantages-icons-fourth p {
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 1rem;
+  width: 90%;
+  padding-left: 10%;
+}
+.advantages-icons-first p span,
+.advantages-icons-second p span,
+.advantages-icons-third p span,
+.advantages-icons-fourth p span {
+  color: #4aa223;
+}
+.advantages .slick-active {
+  outline: none;
+}
+.advantages .arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  z-index: 99;
+}
+.advantages .prev {
+  background: url(../img/left-arow.svg) center no-repeat;
+  background-size: 70%;
+  z-index: 99;
+}
+.advantages .next {
+  background: url(../img/right-arow.svg) center no-repeat;
+  background-size: 70%;
+  right: 0;
+}
+.price {
+  background-color: #286d0a;
+}
+.price-header-btn {
+  margin-right: 0;
+}
+.price h2 {
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 2.1rem;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 120px;
+}
+.price p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding-bottom: 90px;
+  margin-right: 0;
+}
+.price button {
+  width: 90%;
+  height: 70px;
+  font-size: 1rem;
+}
+.price-content-box {
+  display: inline-block;
+  width: 400px;
+  height: 660px;
+  background-color: #f5f5f5;
+  margin-bottom: 120px;
+}
+.price-content-box-header {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 19px;
+  padding: 50px 0 35px 0;
+  text-align: center;
+}
+.price-content-box-img {
+  text-align: center;
+  height: 200px;
+}
+.price-content-box-list {
+  text-align: center;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 20px;
+}
+.price-content-box-list span {
+  display: block;
+  margin-bottom: 38px;
+  margin-top: 35px;
+}
+.price-content-box-btn {
+  text-align: center;
+}
+.price-content-box-btn .button {
+  margin-top: 50px;
+  width: 100%;
+}
+.check-box {
+  text-align: center;
+}
+.check-box img {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: baseline;
+}
+.check-box p {
+  display: inline-block;
+  color: #000;
+  font-family: 'ProximaNovaRg', sans-serif;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 1.1rem;
 }

@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Автоматизированая штукатурка стен</title>
         <!-- Bootstrap CSS -->
+        
         <link rel="stylesheet" href="css/bootstrap.css">
         <link href="css/style.css" rel="stylesheet">
+
     </head>
     <body>
-
+       
         <main class="main">
             <div class="container">
                 <div class="header">
@@ -74,7 +76,153 @@
                         </div> 
                     </div>
                 </div>
-            </div>
-        </main>
+        </main>        
+                <!-- Блок с преимуществами -->
+                <section class="advantages">
+                    <div class="container">
+                            <div class="row">
+                                <!-- Заголовок с преимуществами -->
+                                <h2 class="advantages-header">
+                                    Преимущества работы с нами
+                                </h2>
+                                <!-- Слайдер с преимуществами -->
+                                <div class="advantages-icons">
+                    
+                                    <div class="advantages-icons-first">
+                                        <img class="coin" src="img/coin (2).png" alt="Платите по факту">
+                                        <strong>Платите по факту</strong>
+                                        <p>Вы оплачиваете выполненные <br> работы только после их выполнения. <br> Никаких скрытых доплат и <br> промежуточных платежей.</p>
+                                    </div>
+                                    <div class="advantages-icons-second">
+                                        <img class="folder" src="img/open-folder-with-document (1).png" alt="Заключаем договор">
+                                        <strong>Заключаем договор</strong>
+                                        <p>Перед началом работ заключаем договор <br> на юридическое лицо. <br> Вы можете быть уверены, что все <br> обязательства будут выполнены.
+                                        </p>
+                                    </div>
+                                    <div class="advantages-icons-third">
+                                        <img class="clock" src="img/clock-circular-outline.png" alt="Точно в срок">
+                                        <strong>Точно в срок</strong>
+                                        <p>Работаем строго по установленным <br> срокам, которые прописаны <br> в договоре. Если не успеваем, <br> Вы платите меньше</p>
+                                    </div>
+                                    <div class="advantages-icons-fourth"> 
+                                        <img class="piggy" src="img/piggy-bank (1).png" alt="Экономьте на материалах">
+                                        <strong>Экономьте на материалах</strong>
+                                        <p>Мы являемся структурным <br> подразделением компании <br> поставщика строительных смесей <br> <span>gicema.ru</span> и даём Вам самые <br> выгодные цены.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <!-- Блок с ценами -->
+                <section class="price">
+                    <div class="container">
+                            <!-- шапка блока с ценами -->
+                            <div class="price-header">
+                                <div class="row">
+                                    <div class="col-md-2 offset-md-5">
+                                        <h2>Цены</h2>
+                                    </div>
+                                    <div class="col-md-4 offset-md-8">
+                                        <div class="price-header-btn d-flex justify-content-end">
+                                            <button class="button">Рассчитать точную стоимость</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 offset-md-4">
+                                        <p>Выберите вариант, который подходит Вам:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- контент блока с ценами -->
+                                <div class="price-content">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="price-content-box">
+                                                <div class="row">
+                                                    <div class="price-content-box-header">
+                                                        <strong>Штукатурка вашим материалом</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="price-content-box-img">
+                                                        <img src="img/price/300rub.jpg" alt="Штукатурка вашим материалом">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="price-content-box-list">
+                                                        <span>от <strong>300 руб/м </strong><sup>2</sup></span> 
+                                                        <div class="check-box">
+                                                            <img src="img/check-box.svg" alt="">
+                                                            <p>Проведение работ</p> <br>
+                                                            <img src="img/check-box.svg" alt="">
+                                                            <p>Уборка</p>
+                                                        </div>
+                                                <div class="row">
+                                                    <div class="price-content-box-btn col-md-6 offset-md-3">
+                                                        <button class="button">Заказать</button>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="price-content-box">
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="price-content-box">
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </section>
+                
+                
+
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            
+            <link rel="stylesheet" href="slick/slick/slick.css">
+            <link rel="stylesheet" href="slick/slick/slick-theme.css">
+            <script src="slick/slick/slick.min.js"></script>
+
+            <script>
+                $(document).ready(function(){
+                $('.advantages-icons').slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    responsive: [
+                                {
+                                breakpoint: 991,
+                                settings: {
+                                    slidesToShow: 2,
+                                    prevArrow:'<button class="prev arrow"></button>',
+                                    nextArrow:'<button class="next arrow"></button>',
+                                    slidesToScroll: 2
+                                }
+                                },
+                                {
+                                breakpoint: 767,
+                                settings: {
+                                    slidesToShow: 1,
+                                    prevArrow:'<button class="prev arrow"></button>',
+                                    nextArrow:'<button class="next arrow"></button>',
+                                    slidesToScroll: 1
+                                }
+                                }
+                                // You can unslick at a given breakpoint now by adding:
+                                // settings: "unslick"
+                                // instead of a settings object
+                            ]
+                });
+                });
+            </script>
     </body>
 </html>
