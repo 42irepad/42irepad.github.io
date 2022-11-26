@@ -1,0 +1,63 @@
+ .modal-footer{
+    border-top: 0;
+}
+/*
+.modal-body{
+    text-align: center;
+    padding: 0;
+}
+*/
+.modal-header{
+    border-bottom: 0;
+} 
+
+.modal{
+    background-color: #2d3237;
+}
+
+.modal-content{
+    background-color:#e64e4e;
+}
+
+img{
+    height: 120px;
+    width: 90%;
+    margin-top: -10px;
+}
+
+.question{
+    text-align: center;
+}
+.yes, .no{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #fdf3f3;
+    border-radius: 25%;
+    padding-top: 7px;
+    margin-top: 20px;
+    color: #fdf3f3;
+    text-transform: uppercase;
+}
+
+.no{
+    margin-left: 20px;
+}
+
+.question p{
+    font-size: 20px;
+    font-weight: 700;
+    color:#fdf3f3;
+}
+
+.yes:hover, .no:hover{
+    background: #fdf3f3;
+    border-color: #ff8787;
+    transition: 0.3s;
+    text-shadow: #000;
+    color: #000;
+    
+}
+.btn{
+    margin-top: 20px;
+}
