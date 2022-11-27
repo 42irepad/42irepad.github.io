@@ -116,7 +116,8 @@ html {
 }
 .a,
 button,
-input {
+input,
+textarea {
   outline: none;
 }
 label {
@@ -154,44 +155,6 @@ label {
 }
 .phone-block {
   text-align: right;
-}
-@media (max-width: 991px) {
-  .phone-block {
-    text-align: center;
-  }
-  .logo {
-    margin-top: 1.3rem;
-  }
-  .main-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .main-form-footer {
-    display: inline-block;
-    margin-left: 15%;
-    text-align: center;
-  }
-}
-@media (max-width: 767px) {
-  .logo {
-    text-align: center;
-  }
-  .phone-block {
-    text-align: center;
-  }
-  .wrap-block {
-    text-align: center;
-  }
-  .main-form-footer {
-    display: inline-block;
-    margin-left: 20%;
-    text-align: center;
-  }
-  .main {
-    padding: 3rem 0;
-    background: url('../img/mainbg.png') no-repeat;
-    background-size: cover;
-  }
 }
 .advantages {
   padding: 5rem 0 0 0;
@@ -307,26 +270,23 @@ label {
   margin-right: 0;
 }
 .price button {
-  width: 90%;
-  height: 70px;
-  font-size: 1rem;
+  height: 60px;
+  font-size: 0.85rem;
 }
 .price-content-box {
   display: inline-block;
-  width: 400px;
-  height: 660px;
+  width: 100%;
   background-color: #f5f5f5;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 .price-content-box-header {
   font-family: 'ProximaNovaBold', sans-serif;
-  font-size: 19px;
+  font-size: 22px;
   padding: 50px 0 35px 0;
   text-align: center;
 }
 .price-content-box-img {
   text-align: center;
-  height: 200px;
 }
 .price-content-box-list {
   text-align: center;
@@ -337,12 +297,28 @@ label {
   display: block;
   margin-bottom: 38px;
   margin-top: 35px;
+  font-size: 25px;
 }
 .price-content-box-btn {
   text-align: center;
+  margin-top: 125px;
+  margin-bottom: 54px;
 }
 .price-content-box-btn .button {
-  margin-top: 50px;
+  width: 100%;
+}
+.price-content-box-btn-2 {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.price-content-box-btn-2 .button {
+  width: 100%;
+}
+.price-content-box-btn-3 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.price-content-box-btn-3 .button {
   width: 100%;
 }
 .check-box {
@@ -358,7 +334,85 @@ label {
   display: inline-block;
   color: #000;
   font-family: 'ProximaNovaRg', sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   margin-bottom: 0;
   font-size: 1.1rem;
+}
+@media (max-width: 991px) {
+  .phone-block {
+    text-align: center;
+  }
+  .logo {
+    margin-top: 1.3rem;
+  }
+  .main-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .main-form-footer {
+    display: inline-block;
+    margin-left: 15%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    text-align: center;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .main-form-footer {
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+  }
+  .main {
+    padding: 3rem 0;
+    background: url('../img/mainbg.png') no-repeat;
+    background-size: cover;
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: -2rem;
+  width: 2rem;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+}
+.popup-content {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10%;
+  background-color: #ffffff;
+  padding: 4rem 6rem;
+}
+.popup-form {
+  margin-top: 3rem;
+  padding: 0;
+}
+.popup-header {
+  font-family: 'ProximaNovaBold', sans-serif;
 }
