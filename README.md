@@ -38,3 +38,6 @@
 
 
 [Урок 17](https://42irepad.github.io/Lesson_17_popup/ "Урок 17") - Всплывающие окна
+
+
+[Урок 18](https://42irepad.github.io/Lesson_18_tab_akkordeon/ "Урок 18") - Табы и Аккордеон
