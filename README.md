@@ -41,3 +41,6 @@
 
 
 [Урок 18](https://42irepad.github.io/Lesson_18_tab_akkordeon/ "Урок 18") - Табы и Аккордеон
+
+
+[Урок 19](https://42irepad.github.io/Lesson_19_animation/ "Урок 19") - Анимация
