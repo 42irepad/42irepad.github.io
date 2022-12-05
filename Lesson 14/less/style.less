@@ -1,3 +1,4 @@
+
 // fonts
 @font-face {
     font-family: 'ProximaNovaBold';
@@ -51,11 +52,50 @@ html{
     font-style: 10px;
 }
 
-section{
-    padding: 10rem 0;
+
+.form{
+    &-input{
+        display: block;
+        border: 1px solid @borderInput;
+        width: 100%;
+        height: 3rem;
+        margin: 2rem 0;
+        border-radius: 5px;
+        text-align: center;
+        .reg();
+        font-size: 1.4rem;
+        &-txt{
+            font-size: 1rem;
+            display: block;
+            border: 1px solid @borderInput;
+            width: 100%;
+            height: 3rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+            text-align: center;
+            .reg();
+            padding-top: 13px;
+        }
+    }
+    // кнопка формы
+    &-btn{
+        display: block;
+        font-size: 1rem;
+        height: 4rem;
+        width: 100%;
+    }
+    // Названия на строками ввода
+    label{
+        background-color: @light;
+        padding: 0.2rem;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 1rem;
+        .reg();
+    }
 }
 
-// button
+
 .button{
     background-color: @btn-color;
     color: @light;
@@ -65,6 +105,11 @@ section{
     border: none;
     .reg();
     font-size: 1rem;
+    transition: all 0.3s;
+    &:hover{
+        cursor: pointer;
+        background-color: darken(@btn-color, 5%);
+    }
 }
 
 // main
@@ -77,15 +122,32 @@ section{
         margin-top: 14rem;
         // загооловок
         h1{
+            margin-top: 0;
             text-transform: uppercase;
             font-size: 2rem;
             .regBold();
             margin-bottom: 2rem;
             line-height: 1.45;
         }
-
-    
+        
         // подзаголовок
+        
+    }
+    &-title{
+        span{
+            display: inline-block;
+            padding: 1.2rem 2rem;
+            background-color: @icon-color;
+            font-size: 1rem;
+            color:@light;
+            text-align: center;
+            margin-bottom: 3rem;
+            // цифра 300 рублей
+            strong{
+                font-size: 1.3rem;
+                margin-bottom: 2rem;
+            }
+        }
     }
     &-subtitle{
         font-size: 1.2rem;
@@ -103,6 +165,7 @@ section{
         background-color: @light;
         padding: 2rem 3rem;
         text-align: center;
+        margin-bottom: 45px;
         // заголовок главной формы
         &-header{
             font-size: 1.1rem;
@@ -111,52 +174,29 @@ section{
                 font-size: 1.3rem;
             }
         }
+        &-footer{
+            padding-left: 70px;
+            font-size: 0.75rem;
+        }
         small{
             display: block;
             margin-top: 1.5rem;
+            font-size: 0.75rem;
         }
         // ввод данных в форме
-        &-input{
-            display: block;
-            border: 1px solid @borderInput;
-            width: 100%;
-            height: 3rem;
-            margin: 2rem 0;
-        }
-        // кнопка формы
-        &-btn{
-            display: block;
-            font-size: 1.5em;
-            height: 4rem;
-            width: 100%;
-}
+        
     }
 }
 
-// Названия на строками ввода
-label{
-    background-color: @light;
-    padding: 0.5rem;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 1.3rem;
+
+.a, button, input, textarea{
+    outline: none;
 }
+
+
 
 // зеленый значок 300 рублей
-span{
-    display: inline-block;
-    padding: 1.2rem 2rem;
-    background-color: @icon-color;
-    font-size: 1rem;
-    color:@light;
-    text-align: center;
-    margin-bottom: 3rem;
-    // цифра 300 рублей
-    strong{
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-    }
-}
+
 
 // phonecall
 .phone-link{
@@ -168,7 +208,11 @@ span{
     line-height: 7rem;
     .regBold;
     font-size: 1.3rem;
+    text-decoration: none;
+    text-align: right;
 }
+
+
 
 // шапка сайта
 .header{
@@ -190,3 +234,392 @@ span{
     text-align: right;
 }
 
+
+
+// блок с преимуществами
+// header
+.advantages{
+    padding: 5rem 0 0 0;
+    &-header{
+        text-align: center;
+        font-size: 36px;
+        .regBold();
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    // преимущества
+    &-icons{
+        margin: 133px 0 145px;
+        text-align: center;
+        &-first, &-second, &-third, &-fourth{
+            display: inline-block;
+            text-align: center;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            strong{
+                display: block;
+                padding: 70px 0 45px;
+                font-size: 20px;
+                .regBold();
+                
+            }
+            .coin, .folder, .clock, .piggy{
+            width: 80px;
+            height: 70px;
+            }
+            
+            p{
+                .reg();
+                font-size: 1rem;
+                width: 90%;
+                padding-left: 10%;
+                span{
+                color: #4aa223;
+                }
+        }
+
+    }   
+}
+.slick-active{
+    outline: none;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border:none;
+    z-index: 99; 
+}
+.prev{
+    background: url(../img/left-arow.svg) center no-repeat;
+    background-size: 70%;
+    z-index: 99;
+}
+.next{
+    background: url(../img/right-arow.svg) center no-repeat;
+    background-size: 70%;
+    right: 0;
+}
+
+}
+// блок с ценами
+.price{
+    background:  url(../img/price/bgr-prices.png) center;
+    padding-bottom: 117px;
+    &-button{
+        text-align: right;
+    }
+    &-header{
+        &-btn{
+            margin-top: 160px;
+        }
+        &_light{
+            margin-top: 2rem;
+            text-align: center;
+            color: @light;
+        }
+        h2{
+            padding-bottom: 50px;
+            padding-top: 120px;
+            font-size: 36px;
+            .regBold();
+        }
+        p{
+            font-size: 14px;
+            padding-bottom: 95px;
+        }
+    }
+    &-box{
+        padding: 50px 25px 45px;
+        text-align: center;
+        background:@light;
+        box-shadow: 0px 14px 10.5px rgba(0,0,0,0.17);
+        min-height: 570px;
+        h3{
+            font-size: 15px;
+            line-height: 20px;
+            .regBold();
+        }
+        img{
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: 21px;
+            width: 100%;
+            max-width: 20rem;
+        }
+    }
+    &-tag{
+        display: block;
+        margin-bottom: 34px;
+        font-size: 19px;
+        line-height: 20px;
+        .regBold();
+    }
+    &-list{
+        min-height: 160px;
+        list-style-type: none;
+        padding: 0;
+        font-size: 14px;
+        line-height: 30px;
+        & li{
+            &::before{
+                content:' ';
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                background: url(../img/check-box.svg) no-repeat center;
+                vertical-align: middle;
+                background-size:100%;
+                margin-right: 9px;
+            }            
+        }
+    }
+}
+
+
+
+// Оформление модального окна
+.popup{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    &-close{
+        position: absolute;
+        top: -1rem;
+        right: -2rem;
+        width: 2rem;
+        border:none;
+        font-size: 2rem;
+        text-align: center;
+        background-color: transparent;
+        color:@light;
+    }
+    &-content{
+        position: fixed;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        background-color:@light;
+        padding: 4rem 6rem;
+    }
+    &-form{
+        margin-top: 3rem;
+        padding: 0;
+    }
+    &-header{
+        .regBold();
+    }
+
+}
+// секция с отзывами
+.media{
+    margin-top: 50px;
+    &-left{
+        display: inline-block;
+    }
+    &-body{
+        display: inline-block;
+        padding-left: 20px;
+        padding-top: 17px;
+    }
+}
+
+.feedback{
+    background: #ededed;
+    position: relative;
+    &-form{
+        text-align: center;
+        background-color: @light;
+        margin-top: 59px;
+        padding: 51px;
+        h3{
+            .regBold();
+            font-size: 22px;
+            margin-bottom: 45px;
+        }
+        label{
+            transform: translate(-50%, 15px);
+        }
+        &-btn{
+            max-width: 260px;
+            margin: auto;
+        }
+    }
+    &-text{
+        position: relative;
+        // p{
+            font-style: italic;
+            border: 2px solid @icon-color;
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: -15px;
+                left: 40px;
+                width: 15px;
+                height: 15px;
+                border: 2px solid @icon-color;
+                background-color: @light;
+                border-bottom: none;
+                border-top-right-radius: 100px;
+            }
+        // }
+    }
+    &-name{
+        margin: 60px 0 30px 20px;
+        text-align: left;
+    }
+    &_next{
+        left: -4rem;
+    }
+    &_prev{
+        right: -4rem;
+    }
+    &-slider{
+        box-shadow: 0px 12px 9px rgba(0,0,0,0.11);
+        background-color: @light;
+        &-content{
+            
+            padding: 56px 60px;
+            p{
+                font-size: 16px;
+                .reg();
+            }
+        }
+        &-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: @icon-color;
+            border: none;
+            width: 50px;
+            height: 50px;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    &-header{
+        text-align: center;
+        font-size: 36px;
+        .regBold();
+        padding: 114px 0 148px;
+    }
+    .hand{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 250px;
+    }
+}
+@media(max-width: 991px){
+
+   
+    .phone-block{
+        text-align: center;
+    }
+    .logo{
+        margin-top: 1.3rem
+    }
+    .main-title{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .main-form-footer{
+        display: inline-block;
+        margin-left: 15%;
+        text-align: center;
+    }
+    .price{
+        &-button{
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
+    }
+    .price{
+        &-list{
+            font-size: 12px;
+        }
+        &-box{
+            margin-bottom: 15px;
+        }
+        &-header{
+            &-btn{
+                margin-top: 40px;
+                font-size: 12px;
+            }
+            &_light{
+                margin-bottom: 0;
+            }
+            p{
+                padding: 0;
+            }
+        }
+
+    }
+    .feedback{
+        &_next{
+            left: 0;
+        }
+        &_prev{
+            right: 0;
+        }
+        &-slider-content{
+            .fotorama{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .logo{
+        text-align: center;
+    }
+    .phone-block{
+        text-align: center;
+    }
+    .wrap-block{
+        text-align: center;
+    }
+    .main-form-footer{
+        display: inline-block;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .main{
+        padding: 3rem 0;
+        background: url('../img/mainbg.png') no-repeat;
+        background-size: cover;
+    }
+    .hand{
+        display: none;
+    }
+    .feedback{
+        &_next{
+            left: 0px;
+        }
+        &_prev{
+            right: 0px;
+        }
+        &-form{
+            label{
+                transform: translate(-50%, 50%);
+            }
+        }
+    }
+    
+
+}
