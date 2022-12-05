@@ -44,3 +44,6 @@
 
 
 [Урок 19](https://42irepad.github.io/Lesson_19_animation/ "Урок 19") - Анимация
+
+
+[Урок 20](https://42irepad.github.io/Lesson_20_Video_bg/ "Урок 20") - Видео Фон
