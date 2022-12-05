@@ -1,0 +1,31 @@
+.main-text{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    border: 2px double rgba(242,247,200, .3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    background: rgba(242,247,200, .8);
+    background: linear-gradient(90deg, rgba(242,247,200,.5) 0%, rgba(255,255,255,0) 50%, rgba(242,247,200,.5) 100%);
+}
+
+.main-section{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+}
