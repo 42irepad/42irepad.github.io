@@ -1,0 +1,43 @@
+/* ======= Hero Section ======= */
+.hero-section {
+  min-height: 560px;
+  position: relative;
+}
+.hero-section .figure-holder-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-section .figure-holder {
+  position: relative;
+  height: 560px;
+}
+.hero-section .figure-holder .figure-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.hero-carousel {
+  height: 560px;
+  color: #fff;
+}
+.hero-carousel .carousel-inner .item {
+  height: 560px;
+  background-position: center center;
+}
+.hero-carousel .carousel-inner .heading {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.hero-carousel .carousel-inner .intro {
+  font-size: 18px;
+}
+.hero-carousel .carousel-inner .intro + .btn {
+  margin-top: 15px;
+}
