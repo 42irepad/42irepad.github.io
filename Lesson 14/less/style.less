@@ -436,7 +436,7 @@ html{
 }
 
 .feedback{
-    background: #ededed;
+    background: #fcfcfc;
     position: relative;
     &-form{
         text-align: center;
@@ -523,8 +523,157 @@ html{
         max-width: 250px;
     }
 }
-@media(max-width: 991px){
 
+
+
+// секция со схемой работы
+
+.work{
+    position: relative;
+    background:@light;
+    padding: 115px 0;
+    // шапка схемы работ
+    &-header{
+        text-align: center;
+        h2{
+            .regBold();
+            font-size: 36px;
+        }
+        p{
+            .reg();
+            font-size: 16px;
+            line-height: 18px;
+            margin: 65px 0;
+        }
+    }
+    // список схемы работ
+    
+}
+
+// все включено
+
+.inclusive{
+    background: #f5f5f5;
+    padding: 115px 0 150px;
+    &-header{
+        text-align: center;
+        h2{
+            .regBold();
+            font-size: 48px;
+            line-height: 18px;
+            color: #358015;
+        }
+        p{
+            margin: 50px 0 100px;
+            font-size: 16px;
+            line-height: 18px;
+            .reg();
+        }
+    }
+    &-content{
+        position: relative;
+        margin-bottom: 130px;
+        h4{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 18px;
+            .regBold();
+            margin-left: 60px;
+            padding-top: 15px;
+        }
+        p{
+            display: inline-block;
+            margin-left: 60px;
+            font-size: 13px;
+            line-height: 18px;
+            .reg();
+            
+        }
+       img{
+            position: absolute;
+            top: 0;
+            width: 50px;
+        } 
+    }
+}
+
+@media (max-width:1199px){
+    .feedback{
+        
+        &_prev{
+            right: 0;
+        }
+        &_next{
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 575px){
+
+
+
+    .form{
+        &-btn{
+            padding: 0;
+        }
+    }
+
+    .media{
+        &-left{
+            display: none;
+        }
+        &-body{
+            padding-top: 0;
+        }
+    }
+
+   .main{
+    &-subtitle{
+        font-size: 0.8rem;
+    }
+    &-content{
+        h1{
+            font-size: 1rem;
+        }
+    }
+    &-form{
+        &-footer{
+            p{
+                margin-left: -80px;
+            }
+        }
+    }
+   }
+   .feedback{
+    &-form{
+        &-btn{
+            padding: 0;
+        }
+    }
+    &-header{
+        padding: 50px 0 0;
+    }
+   }
+}
+
+@media (max-width: 991px){
+
+    .inclusive{
+        &-content{
+            h4{
+                font-size: 13px;
+            }
+        } 
+    }
+    
+
+    .main{
+        background: url('../img/mainbg.png');
+        background-size: cover;
+    }
+
+    
    
     .phone-block{
         text-align: center;
@@ -556,6 +705,9 @@ html{
             margin-bottom: 15px;
         }
         &-header{
+            h2{
+                padding-top: 0;
+            }
             &-btn{
                 margin-top: 40px;
                 font-size: 12px;
@@ -570,6 +722,9 @@ html{
 
     }
     .feedback{
+        .hand{
+            left: -65px;
+        }
         &_next{
             left: 0;
         }
@@ -620,6 +775,18 @@ html{
             }
         }
     }
-    
+
+    .inclusive{
+        padding: 50px 0;
+        &-header{
+            margin-bottom: 0;
+            h2{
+                font-size: 26px;
+            }
+        }
+        &-content{
+            margin-bottom: 40px;
+        }
+    }
 
 }
