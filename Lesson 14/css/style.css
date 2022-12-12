@@ -512,7 +512,7 @@ textarea {
 }
 .inclusive {
   background: #f5f5f5;
-  padding: 115px 0 150px;
+  padding: 115px 0 0px;
 }
 .inclusive-header {
   text-align: center;
@@ -553,6 +553,103 @@ textarea {
   top: 0;
   width: 50px;
 }
+.concerns {
+  position: relative;
+}
+.concerns-img-bg {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+.concerns-img-bg img {
+  width: 300px;
+}
+.concerns-header {
+  margin-top: 120px;
+}
+.concerns-header h3 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 18px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 95px;
+}
+.concerns-problem {
+  padding: 50px 50px;
+  border: 2px solid #e8e8e8;
+  text-align: left;
+}
+.concerns-problem h4 {
+  opacity: 0.502;
+  font-size: 21px;
+  line-height: 18px;
+  color: #313131;
+  font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 55px;
+}
+.concerns-problem-list {
+  min-height: 300px;
+  list-style-type: none;
+}
+.concerns-problem-list li {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  color: #313131;
+  font-family: 'ProximaNovaRg', sans-serif;
+  margin-bottom: 50px;
+}
+.concerns-decision {
+  position: relative;
+  padding: 50px 50px;
+  border: 4px solid #358015;
+  text-align: left;
+}
+.concerns-decision h4 {
+  font-size: 21px;
+  line-height: 18px;
+  color: #358015;
+  font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 55px;
+}
+.concerns-decision-list {
+  min-height: 300px;
+  list-style-type: none;
+}
+.concerns-decision-list li {
+  position: relative;
+  font-size: 12.5px;
+  line-height: 14px;
+  color: #313131;
+  font-family: 'ProximaNovaRg', sans-serif;
+  margin-bottom: 50px;
+}
+.concerns-decision li::before {
+  content: '';
+  position: absolute;
+  background: url(../img/concerns/checked-green.png) center center no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.concerns-problem li::before {
+  content: '';
+  position: absolute;
+  background: url(../img/concerns/cancel-red.png) center center no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 @media (max-width: 1199px) {
   .feedback_prev {
     right: 0;
@@ -591,6 +688,16 @@ textarea {
   }
 }
 @media (max-width: 991px) {
+  .concerns-img-bg {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  .concerns-img-bg img {
+    display: none;
+  }
   .inclusive-content h4 {
     font-size: 13px;
   }
@@ -653,6 +760,9 @@ textarea {
   }
 }
 @media (max-width: 767px) {
+  .concerns-problem {
+    margin-bottom: 25px;
+  }
   .logo {
     text-align: center;
   }
@@ -692,7 +802,7 @@ textarea {
     text-align: center;
   }
   .inclusive {
-    padding: 50px 0;
+    padding: 0 35px;
   }
   .inclusive-header {
     margin-bottom: 0;

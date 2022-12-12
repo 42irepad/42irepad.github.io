@@ -580,7 +580,7 @@ html{
 
 .inclusive{
     background: #f5f5f5;
-    padding: 115px 0 150px;
+    padding: 115px 0 0px;
     &-header{
         text-align: center;
         h2{
@@ -622,6 +622,117 @@ html{
         } 
     }
 }
+
+// блок с сомнениями
+
+.concerns{
+    position: relative;
+    // девушка работник
+    &-img{
+        &-bg{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translateX(-60%);
+            img{
+                width: 300px;
+            }
+        }
+    }
+// шапка блока
+    &-header{
+        margin-top: 120px;
+        
+        h3{
+            text-align: center;
+            font-size: 36px;
+            line-height: 18px;
+            .regBold();
+            margin-bottom: 95px;
+        }
+    }
+    // блок с проблемами
+    &-problem{
+        padding: 50px 50px;
+        border: 2px solid #e8e8e8;
+        text-align: left;
+        
+        h4{
+            opacity: 0.502;
+            font-size: 21px;
+            line-height: 18px;
+            color: #313131;
+            .regBold();
+            margin-bottom: 55px;
+        }
+        &-list{
+            min-height: 300px;
+            list-style-type: none;
+            li{
+                position: relative;
+                font-size: 13px;
+                line-height: 18px;
+                color: #313131;
+                .reg();
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+    // блок с решениями
+    &-decision{
+        position: relative;
+        padding: 50px 50px;
+        border: 4px solid #358015;
+        text-align: left;
+        
+        h4{
+            font-size: 21px;
+            line-height: 18px;
+            color: #358015;
+            .regBold();
+            margin-bottom: 55px;
+        }
+        &-list{
+            min-height: 300px;
+            list-style-type: none;
+            li{
+                position: relative;
+                font-size: 12.5px;
+                line-height: 14px;
+                color: #313131;
+                .reg();
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+// замена маркеров изображениями
+// зеленый чек бокс
+.concerns-decision li::before{
+    content: '';
+    position: absolute;
+    background: url(../img/concerns/checked-green.png) center center no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+// красный крестик
+.concerns-problem li::before{
+    content: '';
+    position: absolute;
+    background: url(../img/concerns/cancel-red.png) center center no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 @media (max-width:1199px){
     .feedback{
@@ -686,6 +797,20 @@ html{
 }
 
 @media (max-width: 991px){
+
+    .concerns{
+        &-img{
+            &-bg{
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                transform: translateX(-60%);
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
 
     .inclusive{
         &-content{
@@ -774,6 +899,13 @@ html{
 }
 
 @media(max-width: 767px){
+
+      
+    .concerns{
+        &-problem{
+            margin-bottom: 25px;
+        }
+    }
     .logo{
         text-align: center;
     }
@@ -818,7 +950,7 @@ html{
         }
     }
     .inclusive{
-        padding: 50px 0;
+        padding: 0 35px;
         &-header{
             margin-bottom: 0;
             h2{
